@@ -12,9 +12,8 @@ Asegúrate de tener instalado lo siguiente en tu sistema:
 1. Clona el repositorio:
 
 ```bash
-git clone https://url-del-repositorio.git
+git clone https://github.com/kenny1504/unbc.git
 cd nombre-del-repositorio
-**
 ```
 2. Instala las dependencias de PHP:
 ```bash
