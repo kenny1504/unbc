@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('lastname')->nullable();
             $table->string('phone')->nullable();
+            $table->timestamp('deleted_at')->nullable()->after('password');
         });
     }
 
@@ -23,7 +24,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn(['lastname', 'phone']);
+            $table->dropColumn(['lastname', 'phone','deleted_at']);
         });
     }
 };
